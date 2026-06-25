@@ -9,9 +9,13 @@ Sparse Attention is a collection of algorithmic modifications designed to solve 
 
 The technical progression of attention sparsification reflects a transition from hand-crafted, rigid geometric masks to localized block kernels, moving toward dynamic, data-dependent clustering routing.
 
-[Fixed Structural Patterns (2019/2020)] ----> [Hardware-Aware Blocks (2022)] ----> [Dynamic Runtime Routing (2024+)](Rigid Strided & Window Patterns)             (SRAM Fused Localized Kernels)            (Adaptive Token Sorting & Clustered Hashing)
 
-
+```mermaid
+flowchart LR
+    A["Fixed Structural Patterns (2019/2020)<br/>(Rigid Strided & Window Patterns)"]
+    --> B["Hardware-Aware Blocks (2022)<br/>(SRAM Fused Localized Kernels)"]
+    --> C["Dynamic Runtime Routing (2024+)<br/>(Adaptive Token Sorting & Clustered Hashing)"]
+```
 
 *   **The Heuristic Fixed Pattern Era (~2019–2021)**
     *   *Concept:* Introduced by early architectures like **Sparse Transformer**, **Longformer**, and **BigBird**. Engineers combined fixed, hand-crafted geometric masks—such as local sliding windows, dilated or strided patterns, and static global token points—to manually construct an approximation of a full attention matrix.
