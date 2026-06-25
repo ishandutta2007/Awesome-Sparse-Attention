@@ -1,11 +1,24 @@
 # Awesome-Sparse-Attention
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Sparse Attention Banner">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>&nbsp;<a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  &nbsp;<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> **An exhaustive, SEO-optimized repository and curated list covering the evolution, algorithms, patterns, and applications of Sparse Attention in modern Transformer models.** Discover the mechanisms of FlashAttention, Longformer, BigBird, and DeepSeek MLA, and how they solve the quadratic complexity bottleneck in LLMs and AI architectures.
+
+
 ## Sparse Attention: Evolution, Variants, Types, & Applications
 
 Sparse Attention is a collection of algorithmic modifications designed to solve the quadratic computational complexity ($O(N^2)$) and heavy memory footprint of the standard Full Self-Attention mechanism in Transformer models. In standard attention, every token in a sequence must calculate a dot-product score with every other token, which creates an infrastructure bottleneck when processing long context windows (e.g., full books, codebase audits, or high-resolution video clips). Sparse Attention mitigates this by restricting the attention matrix, forcing tokens to compute scores only with a highly relevant, pre-defined, or dynamically discovered subset of other tokens, reducing time and space complexity to near-linear or log-linear scaling ($O(N \log N)$ or $O(N)$).
 
 ---
 
-## 1. The Chronological Evolution
+## 🕰️ 1. The Chronological Evolution
 
 The technical progression of attention sparsification reflects a transition from hand-crafted, rigid geometric masks to localized block kernels, moving toward dynamic, data-dependent clustering routing.
 
@@ -25,7 +38,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Architectural Variants
+## 🧩 2. Core Functional & Architectural Variants
 
 Sparse Attention patterns are strictly categorized based on how the connectivity map between queries and keys is constructed and maintained throughout the forward pass.
 
@@ -38,7 +51,7 @@ Sparse Attention patterns are strictly categorized based on how the connectivity
 
 ---
 
-## 3. High-Yield Production Implementations
+## 🚀 3. High-Yield Production Implementations
 
 Multiple distinct algorithmic strategies are used to deploy sparse attention layers in consumer and enterprise-scale model frameworks.
 
@@ -50,7 +63,7 @@ Multiple distinct algorithmic strategies are used to deploy sparse attention lay
 
 ---
 
-## 4. Production Engineering Challenges & Bottlenecks
+## ⚠️ 4. Production Engineering Challenges & Bottlenecks
 
 While Sparse Attention offers elegant mathematical complexity reductions on paper, executing it on real-world silicon hardware presents explicit constraints.
 
@@ -61,7 +74,7 @@ While Sparse Attention offers elegant mathematical complexity reductions on pape
 
 ---
 
-## 5. Frontier Real-World Applications
+## 🌍 5. Frontier Real-World Applications
 
 | Application | Description | Year First Used | Paper Link |
 | :--- | :--- | :--- | :--- |
