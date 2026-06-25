@@ -82,3 +82,14 @@ While Sparse Attention offers elegant mathematical complexity reductions on pape
 | **[High-Resolution Biological Genomic Mapping](pages/biological_genomic_mapping.md)** | *Application:* Translates massive DNA or protein sequences, which span hundreds of thousands of base-pair tokens (A, C, G, T). Because genetic mutations often exhibit distant spatial structures or long-range periodic dependencies, strided and block-sparse attention models map macro-molecular profiles efficiently. | 2021 | [Enformer](https://www.nature.com/articles/s41592-021-01252-x) |
 | **[Spatio-Temporal Video Frame Modeling](pages/video_frame_modeling.md)** | *Application:* Powers video generation foundation platforms. Instead of allowing every pixel across every frame to attend to every other pixel globally, the system uses factorized sparse axial attention—alternating between a purely spatial attention head pass (image structure) and a temporal attention head pass (motion trajectory)—keeping multi-minute video processing computationally feasible. | 2021 | [TimeSformer](https://arxiv.org/abs/2102.05095) |
 
+
+## Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Sparse-Attention&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Sparse-Attention&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Sparse-Attention&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Sparse-Attention&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
